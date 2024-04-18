@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    color: white;
+    background-color: #b0e7d8;
+}
+
+:root {
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+
+
+.navbar {
+    background-color: #166a74;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0.75rem;
+    margin: 0.02rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 1.25rem;
+}
+
+.nav-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.your-balance {
+    background-color: #77B0AA;
+    height: 230px;
+    width: 300px;
+    display: flex;
+    font-size: 1.25rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+    margin: 1.5rem 0 0 2.5rem;
+}
+
+.inex-container {
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+
+    display: flex;
+}
+
+.in-ex {
+    background-color: #77B0AA;
+    height: 230px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 6.71rem 2.5rem 0 0;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+    z-index:5;
+
+
+
+
+}
+
+
+.money-plus {
+    color: #057835;
+    font-weight: bold;
+}
+
+.money-minus {
+    color: #c0392b;
+    font-weight: bold;
+
+}
+
+
+
+
+
+label {
+    font-weight: bold;
+    /* Make labels bold for emphasis */
+    color: #333;
+    /* Adjust the font color */
+    display: block;
+    /* Display labels as block elements for proper alignment */
+    margin-bottom: 5px;
+    
+}
+
+.add-trans {
+    background-color: #77B0AA;
+    height: 350px;
+    width: 600px;
+    margin: auto;
+    margin-top: 4rem;
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+
+}
+
+.trans-title {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 50%;
+    margin: auto;
+}
+
+
+.form-control {
+    margin: 1rem;
+}
+
+
+
+
+input[type="text"],
+input[type="number"] {
+    width: 50%;
+    /* Make input fields fill the entire width of their container */
+    padding: 10px;
+    /* Add padding for spacing */
+    border: 1px solid #ccc;
+    /* Add a border for visual separation */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+    text-align: center;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #007e67;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border-color: #166a74;
+    border-radius: 0.35rem;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #ffffff;
+    outline: none;
+}
+
+
+
+
+.history {
+    background-color: #77B0AA;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn:focus,
+.delete-btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background-color: #019b7f;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    background-color: #fff;
+    box-shadow: var(--box--shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li span {
+    font-weight: bold;
+}
+
+.list li.plus {
+    border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+    border-right: 5px solid #c0392b;
+}
+
+
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 16px;
+    /* Adjust the font size to make the button smaller */
+    line-height: 16px;
+    /* Adjust the line height to match the font size */
+    padding: 3px 8px;
+    /* Adjust the padding to make the button smaller */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 50%;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.your-balance .bal,
+.inn,
+.add-trans .trans-title,
+.his-title {
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #2c3e50;
+    /* Adjust the font color */
+    border-bottom: 2.9px solid #2ecc71;
+    /* Add a bottom border with the desired color and thickness */
+    padding-bottom: 8px;
+    /* Add some padding to space out the text from the border */
+}
+
+#balance {
+    margin-top: 2.5rem;
+}
+
+
+
+.his-title {
+    /* Add some bottom margin for spacing */
+    /* Add some padding below the title */
+    /* Add a bottom border for separation */
+    padding: 1.5rem;
+    padding-bottom: 0.65rem;
+    text-align: center;
+    height: 2rem;
+    width: 50%;
+    margin: auto;
+
+    
+}
+
+.list {
+    list-style-type: none;
+    /* Remove the default list style */
+    padding: 0;
+    /* Remove default padding */
+    margin-top: 15px;
+    /* Add some top margin for spacing */
+}
+
+.list li {
+    background-color: #fff;
+    /* Set background color for list items */
+    border-radius: 5px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+    color: #333;
+    /* Set font color */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Align items evenly */
+    align-items: center;
+    /* Center items vertically */
+    padding: 10px 15px;
+    /* Add padding for spacing */
+    margin-bottom: 10px;
+    /* Add some bottom margin for spacing between items */
+}
+
+.list li:hover {
+    background-color: #f9f9f9;
+    /* Change background color on hover */
+}
+
+.list li.plus {
+    border-right: 5px solid #2ecc71;
+    border-left: 5px solid #2ecc71;
+
+    /* Add green border for positive transactions */
+}
+
+.list li.minus {
+    border-right: 5px solid #c0392b;
+    border-left: 5px solid #c0392b;
+
+    /* Add red border for negative transactions */
+}
+
+.list li span {
+    font-weight: bold;
+    /* Make the transaction amount bold */
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-content">
+            <div class="nav-title">Expense Tracker</div>
+        </div>
+        <div class="nav-links">
+            <div class="nav-link">About</div>
+            <div class="nav-link">Terms and Conditions</div>
+            <div class="nav-link">Contact Us</div>
+        </div>
+    </div>
+
+    <div class="your-balance">
+        <p class="bal">Your Balance </p>
+        <p id="balance" style="font-weight:900; font-size: 50px;">$0.00</p>
+    </div>
+    <div class="in-ex">
+        <p class="inn">Income and Expense</p>
+        <div class="inex-container">
+            <div style="margin: 0 1rem 0 1rem;">
+                <p>Income</p>
+                <p id="money-plus" class="money-plus">+$0.00</p>
+            </div>
+            <div style="margin: 0 1rem 0 1rem" ;>
+                <p>Expense</p>
+                <p id="money-minus" class="money-minus">-$0.00</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="add-trans">
+        <p class="trans-title">Add New Transaction</p>
+        <form id="form" class="form">
+          <div class="form-control">
+            <label for="text">Text</label>
+            <input type="text" id="text" placeholder="Enter Text...." />
+          </div>
+          <div class="form-control">
+            <label for="amount">Amount  <div style="font-size: 1rem;">(negative - expense ,positive - income )</div></label>
+            <input type="number" id="amount" placeholder="Enter amount...">
+          </div>
+          <button class="btn">Add Transaction</button>
+        </form>
+      </div>
+
+
+      <div class="history">
+        <p class="his-title">History</p>
+        <ul id="list" class="list"></ul>
+      </div>
+      
+    <!-- JavaYscript Project  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
